@@ -13,13 +13,13 @@ template = '''
            ])),
            tags.Body({'class':'container'},'body').html(''.join([
                tags.Tag({},'h1').html('Shaft alignment'),
-               tags.Tag({},'hr').html(),
-               tags.Tag({'style':'width:50em;margin-left:.7em;','placeholder':' Center to center'},'input').html(), tags.Tag({},'br').html(),
-               tags.Tag({'style':'width:50em;margin-left:.7em;','placeholder':' Center to cylinder'},'input').html(), tags.Tag({},'br').html(),
-               tags.Tag({'style':'width:50em;margin-left:.7em;','placeholder':' Axis to feet'},'input').html(), tags.Tag({},'br').html(),
-               tags.Tag({'style':'width:50em;margin-left:.7em;','placeholder':' Feet to feet'},'input').html(), tags.Tag({},'br').html(),
-               tags.Tag({'style':'width:50em;margin-left:.7em;'},'button').html('Register'), tags.Tag({},'br').html(),
-               tags.Tag({},'hr').html(),
+               tags.Tag({},'hr',closed=False).html(),
+               tags.Tag({'css':'center-to-center','style':'width:50em;margin-left:.7em;','placeholder':' Center to center'},'input').html(), tags.Tag({},'br',closed=False).html(),
+               tags.Tag({'style':'width:50em;margin-left:.7em;','placeholder':' Center to cylinder'},'input').html(), tags.Tag({},'br',closed=False).html(),
+               tags.Tag({'style':'width:50em;margin-left:.7em;','placeholder':' Axis to feet'},'input').html(), tags.Tag({},'br',closed=False).html(),
+               tags.Tag({'style':'width:50em;margin-left:.7em;','placeholder':' Feet to feet'},'input').html(), tags.Tag({},'br',closed=False).html(),
+               tags.Tag({'style':'width:50em;margin-left:.7em;'},'button').html('Register'), tags.Tag({},'br',closed=False).html(),
+               tags.Tag({},'hr',closed=False).html(),
            ]))
     ]))
 )

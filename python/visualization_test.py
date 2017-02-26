@@ -15,6 +15,21 @@ class VisualizationIndexTest(unittest.TestCase):
         self.header = self.driver.find_element_by_css_selector('h1')
         self.assertEqual(self.header.text,'Shaft alignment')
 
+    def test_hr(self):
+        self.driver.get(self.component_target_url)
+        self.hr = self.driver.find_elements_by_css_selector('hr')
+        self.assertEqual(len(self.hr),2)
+
+    def test_input(self):
+        self.driver.get(self.component_target_url)
+        self.input = self.driver.find_elements_by_css_selector('input')
+        self.assertEqual(len(self.input),4)
+
+    def test_br(self):
+        self.driver.get(self.component_target_url)
+        self.br = self.driver.find_elements_by_css_selector('br')
+        self.assertEqual(len(self.br),10)
+
 if __name__ == '__main__':
     unittest.main(verbosity=2)
 
