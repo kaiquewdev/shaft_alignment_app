@@ -1,0 +1,23 @@
+{
+  "name": "shaft_alignment_app",
+  "authors": [
+    "Kaique da Silva <kaique.developer@gmail.com>"
+  ],
+  "description": "Shaft alignment app",
+  "main": "src/index.js",
+  "keywords": [
+    "mechanical",
+    "engineering",
+    "shaft",
+    "alignment"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
