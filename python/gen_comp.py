@@ -5,7 +5,12 @@ import tags
 
 template = '''
 {0}
+{1}
 '''.format(
+    tags.Tag({},'head').html(''.join([
+        tags.Tag({'href':'./bower_components/bootstrap/dist/css/bootstrap.min.css','rel':'stylesheet/css'},'link').html(),
+        tags.Tag({'href':'./bower_components/bootstrap/dist/css/bootstrap-themes.min.css','rel':'stylesheet/css'},'link').html(),
+    ])),
     tags.Tag({},'h1').html('Shaft alignment'),
 )
 
